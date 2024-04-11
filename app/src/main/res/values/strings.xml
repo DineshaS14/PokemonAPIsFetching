@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PokemonAPIsFetching</string>
+    <string name="check_out_this_pokedex">Check out this pokeDex!</string>
+    <string name="next_pokemon">Next Pokemon</string>
+    <string name="weight_display">Weight </string>
+    <string name="type_display"> Click me, once typed!</string>
+    <string name="type_a_character">Type a Character!</string>
+    <string name="types">Types</string>
+    <string name="click_me_to_see_a_list_of_pokemons">A List of Pokemons!</string>
+    <string name="weight">Weight</string>
+    <string name="name">Name</string>
+</resources>

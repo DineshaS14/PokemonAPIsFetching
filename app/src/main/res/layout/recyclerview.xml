@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/recyclerTypeView"
+        style="@style/color1"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:text="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recyclerviewImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/recyclerviewImageView"
+        android:layout_width="188dp"
+        android:layout_height="172dp"
+        android:background="@drawable/gymbattle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/recyclerWeightView"
+        style="@style/color2"
+        android:layout_width="221dp"
+        android:layout_height="52dp"
+        android:text="@string/weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/recyclerviewImageView"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerTypeView" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        style="@style/color3"
+        android:layout_width="216dp"
+        android:layout_height="68dp"
+        android:text="@string/types"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recyclerviewImageView"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerWeightView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

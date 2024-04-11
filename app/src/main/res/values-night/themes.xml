@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="mainbackground" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:background">@color/black</item>
+    </style>
+    <style name="Base.Theme.PokemonAPIsFetching" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <style name="MyButtonStyle" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="backgroundTint">@color/midnight_blue</item>
+        <item name="android:textColor">@color/goldenrod</item>
+        <item name="android:layout_width">458dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="color1" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/goldenrod</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:background">@color/midnight_blue</item>
+    </style>
+    <style name="color2" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/goldenrod</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:background">@color/black</item>
+    </style>
+    <style name="color3" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:background">@color/red</item>
+    </style>
+</resources>

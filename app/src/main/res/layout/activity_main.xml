@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AppView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/mainbackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pokemonNameTextView"
+        style="@style/Base.Theme.PokemonAPIsFetching"
+        android:layout_width="384dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/headland_one"
+        android:text="@string/check_out_this_pokedex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonImageView" />
+
+    <Button
+        android:id="@+id/nextButton"
+        style="@style/MyButtonStyle"
+        android:text="@string/next_pokemon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-24dp" />
+
+    <ImageView
+        android:id="@+id/pokemonImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="370sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pokemonimg" />
+
+    <TextView
+        android:id="@+id/weightView"
+        style="@style/Base.Theme.PokemonAPIsFetching"
+        android:layout_width="185dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/headland_one"
+        android:text="@string/weight_display"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonNameTextView" />
+
+    <TextView
+        android:id="@+id/typesView"
+        style="@style/Base.Theme.PokemonAPIsFetching"
+        android:layout_width="220dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/headland_one"
+        android:text="@string/types"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintStart_toEndOf="@+id/weightView"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonNameTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/inputTextForChar"
+        android:layout_width="402dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/type_a_character"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <Button
+        android:id="@+id/recyclerViewFetcher"
+        style="@style/MyButtonStyle"
+        android:layout_marginTop="68dp"
+        android:text="@string/click_me_to_see_a_list_of_pokemons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toSearchType"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-24dp" />
+
+    <Button
+        android:id="@+id/toSearchType"
+        style="@style/MyButtonStyle"
+        android:layout_width="447dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/type_display"
+        app:layout_constraintTop_toBottomOf="@+id/inputTextForChar"
+        tools:layout_editor_absoluteX="-18dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewFetcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toSearchType" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
